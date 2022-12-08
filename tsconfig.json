@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"],
+        "@components/*":  ["src/components/*"],
+        "@icons/*":  ["src/assets/icons/*"],
+        "@fonts/*":  ["src/assets/fonts/*"],
+      },
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "target": "es2017",
+      "allowJs": true,
+      "noEmit": false,
+      "skipLibCheck": true,
+      "isolatedModules": true,
+      "allowSyntheticDefaultImports": true,   
+      "esModuleInterop": true,  
+    },
+    "exclude": ["node_modules"],
+}
