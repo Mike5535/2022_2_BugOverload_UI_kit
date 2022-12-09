@@ -10,7 +10,7 @@ export class Header extends Component {
         };
     }
 
-    render() {
-        return template();
+    render(args:any) {
+        return template(args);
     }
 }

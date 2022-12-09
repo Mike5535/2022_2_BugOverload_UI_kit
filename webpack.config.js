@@ -11,9 +11,10 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath: '/',
-        filename: 'uikit.js',
+        filename: 'index.js',
         library: packageConfig.name,
         libraryTarget: 'umd',
+        clean: true,
     },
     resolve: {
         extensions: ['.js', '.json', '.ts'],

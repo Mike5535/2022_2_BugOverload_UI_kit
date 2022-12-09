@@ -1,6 +1,6 @@
 const path = require('path');
-// const src = path.join(__dirname, '../src');
-// const {TsconfigPathsPlugin} = require('tsconfig-paths-webpack-plugin');
+const src = path.join(__dirname, '../src');
+const {TsconfigPathsPlugin} = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
   stories: [
