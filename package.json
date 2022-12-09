@@ -2,12 +2,14 @@
   "name": "moviegate-ui-kit",
   "version": "1.0.0",
   "description": "",
+  "contributors": ["github.com/Ivan-Bir", "github.com/Mike5535"],
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "pub": "npm run build && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "",
