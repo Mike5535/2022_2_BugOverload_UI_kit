@@ -6,7 +6,7 @@ export default {
 };
 
 export const Default = (args:any) => {
-    return new Header(args).render();
+    return new Header(args).render({});
 };
 
 Default.args = {
