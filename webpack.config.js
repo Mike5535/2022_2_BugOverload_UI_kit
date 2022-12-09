@@ -1,9 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
 const packageConfig = require('./package.json');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -14,10 +12,6 @@ module.exports = {
         filename: 'uikit.js',
         library: packageConfig.name,
         libraryTarget: 'umd',
-    },
-    resolve: {
-        extensions: ['.js', '.json', '.ts'],
-        plugins: [new TsconfigPathsPlugin()],
     },
     module: {
         rules: [
@@ -46,7 +40,9 @@ module.exports = {
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'uikit.css' }),
+        new MiniCssExtractPlugin({
+            filename: 'uikit.css'
+        }),
         new CleanWebpackPlugin()
     ],
     optimization: {

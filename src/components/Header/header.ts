@@ -10,7 +10,7 @@ export class Header extends Component {
         };
     }
 
-    render( search = '') {
+    render() {
         return template();
     }
 }
