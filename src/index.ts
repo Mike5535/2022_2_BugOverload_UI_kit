@@ -1,3 +1,3 @@
 import '@/index.scss'
 
-export { Header } from "@components/Header/header"
+export { HeaderUI } from "@components/Header/header"

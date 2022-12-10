@@ -1,6 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const packageConfig = require('./package.json');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
@@ -24,7 +24,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss|css)$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: [/* MiniCssExtractPlugin.loader, */ 'style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.handlebars$/,
@@ -47,9 +47,9 @@ module.exports = {
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'index.css'
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: 'index.css'
+        // }),
         new CleanWebpackPlugin()
     ],
     optimization: {
