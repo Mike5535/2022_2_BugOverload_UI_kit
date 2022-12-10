@@ -30,7 +30,7 @@ jobs:
 
   deploy-storybook:
     runs-on: ubuntu-20.04
-    needs: build
+    needs: build-storybook
     steps:
       - name: Download build
         uses: actions/download-artifact@v1
