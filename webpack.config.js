@@ -23,7 +23,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss|css)$/,
-                use: [/* MiniCssExtractPlugin.loader */'style-loader', 'css-loader', 'sass-loader'],
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.handlebars$/,
@@ -37,20 +37,8 @@ module.exports = {
             },
             {
                 test: /\.(jpg|jpeg|png|svg|ico|webp)$/,
-                // loader: 'file-loader',
                 type: 'asset/resource',
             },
-            // {
-            //     test: /\.(jpg|jpeg|png|svg|ico)$/i,
-            //     use: [
-            //         {
-            //             loader: 'url-loader',
-            //             options: {
-            //                 limit: false,
-            //             },
-            //         },
-            //     ]
-            // },
             {
                 test: /\.(ttf|eot|woff|woff2)$/,
                 type: 'asset/resource',
@@ -58,12 +46,9 @@ module.exports = {
         ],
     },
     plugins: [
-        // new MiniCssExtractPlugin({
-        //     filename: 'index.css'
-        // }),
         new CleanWebpackPlugin(),
     ],
     optimization: {
-        minimize: false,
+        minimize: true,
     },
 }
