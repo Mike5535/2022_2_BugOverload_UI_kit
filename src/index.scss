@@ -1,6 +1,44 @@
 @import "@components/Header/header.scss";
-@import "@fonts/fonts.css";
+// @import "@components/Login/login.scss";
+// @import "@components/Modal/modal.scss";
+// @import "@components/Signup/signup.scss";
+// @import "@components/Userbar/userbar.scss";
+// @import "@components/Collection/collection.scss";
+@import "@components/Film/film.scss";
+// @import "@components/PreviewFilm/previewFilm.scss";
+// @import "@components/Message/errorMessage.scss";
+// @import "@components/Message/successMessage.scss";
+// @import "@components/AboutFilm/aboutFilm.scss";
+// @import "@components/MenuInfoFilm/menuInfoFilm.scss";
+// @import "@components/DescriptionFilm/descriptionFilm.scss";
+// @import "@components/DetailsFilm/detailsFilm.scss";
+// @import "@components/Rating/rating.scss";
+// @import "@components/InputReview/inputReview.scss";
+// @import "@components/ReviewStatistic/reviewStatistic.scss";
+// @import "@components/ListReviews/listReviews.scss";
+// @import "@components/Review/review.scss";
+// @import "@components/SaveToCollectionMenu/saveToCollectionMenu.scss";
+// @import "@components/ProfileMenu/profileMenu.scss";
+// @import "@components/ProfileChange/profileChange.scss";
+// @import "@views/UserProfile/userProfile.scss";
 @import "@components/_Components.scss";
+// @import "@views/FilmPage/filmPage.scss";
+// @import "@components/ActorProfile/actorProfile.scss";
+@import "@fonts/fonts.css";
+// @import "@router/Page404/page404.scss";
+// @import "@components/PremiereDay/premiereDay.scss";
+// @import "@components/PremiereFilm/premiereFilm.scss";
+// @import "@components/PremiereList/premiereList.scss";
+// @import "@components/PremiereFilmDate/premiereFilmDate.scss";
+// @import "@views/PremierePage/premierePage.scss";
+// @import "@views/SearchPage/searchPage.scss";
+// @import "@components/PersonMed/personMed.scss";
+// @import "@components/SearchList/searchList.scss";
+// @import "@views/CollectionPage/collectionPage.scss";
+// @import "@views/UserCollections/userCollections.scss";
+// @import "@components/PreviewUserCollection/previewUserCollection.scss";
+// @import "@components/UserCollList/userCollList.scss";
+// @import "@components/Genre/genre.scss";
 
 ::-webkit-scrollbar {
   width: 0;
@@ -37,8 +75,8 @@ input[type="radio"] {
 body,
 html {
   --main-shadow-color-light: rgb(0 0 0 / 20%);
-  --main-shadow-color-strong: rgb(0 0 0 / 40%);
-  --blackout-color: 0, 0, 0;
+  --main-shadow-color-strong: rgb(0 0 0 / 41%);
+  --blackout-color: rgb(0 0 0);
   --backgr-color: #121212;
   --primary-color: #feba2b;
   --primary-color-hover: #cd9826;
@@ -78,6 +116,9 @@ html {
   --secondary-weak-text: #E0E0E0;
   --line-color-userbar: #858585;
   --backgr-userbar: rgb(#2b2b2b, 0.9);
+  --disable-genre-collection: rgb(110 110 110);
+  --active-genre-collection: rgb(221 221 221);
+  --menu-title-color: #CCC;
   --font-size-big: 48px;
   --font-size-normal: 15px;
   --font-size-small: 13px;
@@ -85,6 +126,7 @@ html {
   background-color: var(--backgr-color);
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0 0 0 / 0%);
 }
 
 a,
@@ -226,6 +268,21 @@ button {
     --margin-left-login-btn: 155px;
     --font-size-big: 36px;
     --font-size-small: 9px;
+    --header-height: 75px;
+  }
+
+  .input-review__user-container {
+    display: none;
+    margin-top: 15px;
+  }
+
+  .input-review__head {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+
+  .js-mobile-search {
+    display: flex;
   }
 
   .header__form {
@@ -239,7 +296,13 @@ button {
   .header__form__icon-search {
     top: 5px;
     width: 25px;
-    margin-left: 155px;
+
+    &_input-full {
+      top: 10px;
+      width: 16px;
+      margin-left: 0;
+      left: 0;
+    }
   }
 
   .primary-btn-big {
@@ -249,7 +312,7 @@ button {
   .modal {
     &__input {
       height: 23px;
-      font-size: 11px;
+      font-size: 10px;
 
       &__button-auth {
         height: 25px;
@@ -283,11 +346,6 @@ button {
   }
 
   .header {
-    &__login__btn {
-      margin-right: var(--standart-margin);
-      margin-left: var(--margin-left-login-btn);
-    }
-
     body,
     html {
       --standart-margin: 15px;
@@ -305,12 +363,15 @@ button {
   }
 
   .input-review {
+    height: 100%;
+
     &__container {
+      height: 100%;
       padding: 25px 30px 35px;
     }
 
-    &__head {
-      font-size: 25px;
+    &__form {
+      height: 50%;
     }
 
     &__select-head-text {
@@ -319,14 +380,11 @@ button {
 
     &__input-title {
       font-size: 12px;
+      height: 41px;
     }
 
     &__input-text {
       font-size: 12px;
-    }
-
-    &__user-container {
-      margin-top: 15px;
     }
 
     &__select {

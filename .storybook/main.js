@@ -18,11 +18,17 @@ module.exports = {
     config.resolve.alias['@components'] = path.resolve(__dirname, '../src/components')
     config.resolve.alias['@icons'] = path.resolve(__dirname, '../src/assets/icons')
     config.resolve.alias['@fonts'] = path.resolve(__dirname, '../src/assets/fonts')
+    config.resolve.alias['@default'] = path.resolve(__dirname, '../src/assets/default')
     config.module.rules.push({
       test: /\.handlebars$/,
       use: ['handlebars-loader'],
       include: path.resolve(__dirname, '../'),
-    });
+    },
+    {
+      test: /\.(jpg|jpeg|png|svg|ico|webp)$/,
+      type: 'asset/resource',
+    },
+    );
 
     return config;
   },

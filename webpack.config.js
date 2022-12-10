@@ -8,7 +8,7 @@ module.exports = {
     mode: "development",
     entry: './src/index.ts',
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
         filename: 'index.js',
         library: packageConfig.name,
@@ -36,7 +36,7 @@ module.exports = {
                 use: ['babel-loader', 'ts-loader'],
             },
             {
-                test: /\.(jpg|jpeg|png|svg|ico)$/,
+                test: /\.(jpg|jpeg|png|svg|ico|webp)$/,
                 // loader: 'file-loader',
                 type: 'asset/resource',
             },
