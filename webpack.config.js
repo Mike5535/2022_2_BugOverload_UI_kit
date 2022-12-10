@@ -38,8 +38,20 @@ module.exports = {
             },
             {
                 test: /\.(jpg|jpeg|png|svg|ico)$/,
-                loader: 'file-loader',
+                // loader: 'file-loader',
+                type: 'asset/resource',
             },
+            // {
+            //     test: /\.(jpg|jpeg|png|svg|ico)$/i,
+            //     use: [
+            //         {
+            //             loader: 'url-loader',
+            //             options: {
+            //                 limit: false,
+            //             },
+            //         },
+            //     ]
+            // },
             {
                 test: /\.(ttf|eot|woff|woff2)$/,
                 type: 'asset/resource',
