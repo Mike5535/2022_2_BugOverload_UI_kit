@@ -1,12 +1,12 @@
-import { Header } from '@components/Header/header'
+import { HeaderUI } from '@components/Header/header'
 
 export default {
     title: 'Header',
-    component: Header,
+    component: HeaderUI,
 };
 
 export const Default = (args:any) => {
-    return new Header(args).render({});
+    return new HeaderUI(args).render({});
 };
 
 Default.args = {
