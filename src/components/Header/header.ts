@@ -1,6 +1,7 @@
 import template from '@components/Header/header.handlebars';
 import { Component } from '@components/Component';
-import '@/index.scss'
+import '@/index.scss';
+import './header.scss';
 
 export class Header extends Component {
     constructor(props :componentProps) {

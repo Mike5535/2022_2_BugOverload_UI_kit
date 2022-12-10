@@ -34,7 +34,7 @@ module.exports = {
             {
                 test: /\.ts$/,
                 exclude: path.resolve(__dirname, './node_modules'),
-                use: 'ts-loader',
+                use: ['babel-loader', 'ts-loader'],
             },
             {
                 test: /\.(jpg|jpeg|png|svg|ico)$/,
@@ -48,11 +48,11 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'uikit.css'
+            filename: 'index.css'
         }),
         new CleanWebpackPlugin()
     ],
     optimization: {
-        minimize: true,
+        minimize: false,
     },
 }
