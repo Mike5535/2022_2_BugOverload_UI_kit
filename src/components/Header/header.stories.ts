@@ -6,7 +6,7 @@ export default {
 };
 
 export const Default = (args:any) => {
-    return new HeaderUI(args).renderTemplate({});
+    return HeaderUI.renderTemplate(args);
 };
 
 Default.args = {

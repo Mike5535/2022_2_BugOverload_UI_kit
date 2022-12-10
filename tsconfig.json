@@ -17,7 +17,6 @@
         "@store/*":  ["src/store/*"],
         "@reducers/*":  ["src/store/reducers/*"],
         "@actions/*":  ["src/store/actionCreater/*"],
-        "@default/*": ["src/assets/default/*"],
       },
       "module": "commonjs",
       "noImplicitAny": true,
