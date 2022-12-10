@@ -3,7 +3,7 @@ import { Component } from '@components/Component';
 import '@/index.scss';
 import './header.scss';
 
-export class Header extends Component {
+export class HeaderUI extends Component {
     constructor(props :componentProps) {
         super(props);
     }
