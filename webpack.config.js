@@ -24,7 +24,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(scss|css)$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: [/* MiniCssExtractPlugin.loader */'style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.handlebars$/,
@@ -47,9 +47,9 @@ module.exports = {
         ],
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'index.css'
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: 'index.css'
+        // }),
         new CleanWebpackPlugin()
     ],
     optimization: {

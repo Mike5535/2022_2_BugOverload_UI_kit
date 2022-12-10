@@ -1,12 +1,12 @@
 import { HeaderUI } from '@components/Header/header'
 
 export default {
-    title: 'Header',
+    title: 'HeaderUI',
     component: HeaderUI,
 };
 
 export const Default = (args:any) => {
-    return new HeaderUI(args).render({});
+    return new HeaderUI(args).renderTemplate({});
 };
 
 Default.args = {
