@@ -1,13 +1,4 @@
 const path = require('path');
-<<<<<<< HEAD
-const src = path.join(__dirname, '../src');
-const {TsconfigPathsPlugin} = require('tsconfig-paths-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
-=======
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
->>>>>>> origin/master
 
 module.exports = {
   stories: [
