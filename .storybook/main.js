@@ -1,6 +1,6 @@
 const path = require('path');
-const src = path.join(__dirname, '../src');
-const {TsconfigPathsPlugin} = require('tsconfig-paths-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   stories: [
@@ -25,6 +25,26 @@ module.exports = {
       use: ['handlebars-loader'],
       include: path.resolve(__dirname, '../'),
     });
+
+    const tsPaths = new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/assets/favicons'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/icons'),
+          to: path.resolve(__dirname, 'dist'),
+        },
+      ],
+    });
+    config.resolve.plugins = [
+      tsPaths, 
+    ];
+
+    // config.resolve.plugins
+    //   ? config.resolve.plugins.push(tsPaths)
+    //   : (config.resolve.plugins = [tsPaths]);
 
     return config;
   },
