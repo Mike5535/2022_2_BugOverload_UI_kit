@@ -2,6 +2,7 @@ import template from '@components/ListReviews/listReviews.handlebars';
 import { Component } from '@components/Component';
 import '@/index.scss';
 import '@components/ListReviews/listReviews.scss';
+import '@components/_Components.scss';
 
 /**
 * Отрисовывает меню для переключения описания фильма и полной информацией о нём

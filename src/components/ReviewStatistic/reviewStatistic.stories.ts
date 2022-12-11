@@ -1,7 +1,7 @@
 import { ReviewStatisticUI } from '@components/ReviewStatistic/reviewStatistic'
 
 export default {
-    title: 'MenuInfoFilmUI',
+    title: 'ReviewStatisticUI',
     component: ReviewStatisticUI,
 };
 
