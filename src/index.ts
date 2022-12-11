@@ -5,3 +5,9 @@ export { FilmUI } from "@components/Film/film";
 export { AboutFilmUI } from "@components/AboutFilm/aboutFilm";
 export { DescriptionFilmUI } from "@components/DescriptionFilm/descriptionFilm";
 export { CollectionUI } from "@components/Collection/collection";
+export { InputReviewUI } from "@components/InputReview/inputReview";
+export { MenuInfoFilmUI } from "@components/MenuInfoFilm/menuInfoFilm";
+// export { CollectionUI } from "@components/Collection/collection";
+// export { CollectionUI } from "@components/Collection/collection";
+
+
