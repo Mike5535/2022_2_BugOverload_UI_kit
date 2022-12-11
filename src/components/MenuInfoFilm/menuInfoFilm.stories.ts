@@ -1,4 +1,4 @@
-import { MenuInfoFilmUI } from '@components/MenuInfoFilm/menuInfoFilm'
+import { MenuInfoFilmUI } from '@components/MenuInfoFilm/menuInfoFilm';
 
 export default {
     title: 'MenuInfoFilmUI',
