@@ -22,8 +22,4 @@ export { SaveToCollectionMenuUI } from "@components/SaveToCollectionMenu/saveToC
 export { SearchListUI } from "@components/SearchList/searchList";
 export { UserCollListUI } from "@components/UserCollList/userCollList";
 export { ListReviewsUI } from '@components/ListReviews/listReviews'
-
-// export { SearchListUI } from "@components/SearchList/searchList";
-// export { SearchListUI } from "@components/SearchList/searchList";
-
-
+export { DetailsFilmUI } from "@components/DetailsFilm/detailsFilm";
