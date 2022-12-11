@@ -1,9 +1,9 @@
-import template from '@components/Modal/modal.handlebars';
+import template from '@components/Login/login.handlebars';
 import { Component } from '@components/Component';
 import '@/index.scss';
-import '@components/Modal/modal.scss';
+import '@components/Login/login.scss';
 
-export class ModalUI extends Component {
+export class LoginUI extends Component {
     static renderTemplate(args:any) {
         return template(args);
     }
