@@ -23,7 +23,7 @@
     height: 50px;
     width: auto;
     cursor: pointer;
-    // content: url('@icons/LogoMOVIEGATE.png');
+    content: url('@icons/LogoMOVIEGATE.png');
   }
 
   &__navlink {
@@ -55,6 +55,10 @@
     text-decoration: none;
     display: flex;
     position: relative;
+
+    @media screen and (max-width: 620px) {
+      display: none;
+    }
 
     &_full {
       width: 100%;
@@ -130,4 +134,8 @@
 
 .js-mobile-search {
   display: none;
+
+  @media screen and (max-width: 620px) {
+    display: flex;
+  }
 }
