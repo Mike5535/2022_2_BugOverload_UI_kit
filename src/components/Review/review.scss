@@ -7,14 +7,8 @@
     border-radius: 20px;
     margin-bottom: 48px;
     max-width: 900px;
-    // width: calc(100vw - 2 * #{var(--standart-margin) - 48px});
-    width: calc(100vw - 2 * calc(48px - var(--standart-margin)));
+    width:  calc(100vw - 2 * (var(--standart-margin)));
     box-sizing: border-box;
-
-    // @media screen and (max-width: 1000px) {
-    //   // width: calc(100vh + (800 - 300) * ((100vw - 300px) / (1920 - 300)));
-    // width: calc(100vw - 2 * calc(48px - var(--standart-margin)));
-    // }
   }
 
   &__meta-info-container {
