@@ -1,6 +1,7 @@
 import '@/index.scss';
 
 export { HeaderUI } from "@components/Header/header";
+export { UserbarUI } from "@components/Userbar/userbar";
 export { FilmUI } from "@components/Film/film";
 export { AboutFilmUI } from "@components/AboutFilm/aboutFilm";
 export { DescriptionFilmUI } from "@components/DescriptionFilm/descriptionFilm";
@@ -23,3 +24,10 @@ export { SearchListUI } from "@components/SearchList/searchList";
 export { UserCollListUI } from "@components/UserCollList/userCollList";
 export { ListReviewsUI } from '@components/ListReviews/listReviews'
 export { DetailsFilmUI } from "@components/DetailsFilm/detailsFilm";
+export { LoginUI } from "@components/Login/login";
+export { SignupUI } from "@components/Signup/signup";
+export { ActorProfileUI } from "@components/ActorProfile/actorProfile";
+export { GenreUI } from "@components/Genre/genre";
+export { PersonMedUI } from "@components/PersonMed/personMed"; 
+export { ProfileChangeUI } from "@components/ProfileChange/profileChange";
+export { ProfileMenuUI } from "@components/ProfileMenu/profileMenu";
