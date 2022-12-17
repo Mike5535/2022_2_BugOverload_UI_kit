@@ -16,6 +16,7 @@
                         {{professions}}
                     </div>
                 </div>
+
                 <div class="actor-profile__about-item">
                     <div class="actor-profile__about-item-key">
                         Дата рождения:
@@ -24,6 +25,16 @@
                         {{birthday}}
                     </div>
                 </div>
+                {{#if death}}
+                <div class="actor-profile__about-item">
+                    <div class="actor-profile__about-item-key">
+                        Дата смерти:
+                    </div>
+                    <div class="actor-profile__about-item-value">
+                        {{death}}
+                    </div>
+                </div>
+                {{/if}}
                 {{#if growth}}
                 <div class="actor-profile__about-item">
                     <div class="actor-profile__about-item-key">
