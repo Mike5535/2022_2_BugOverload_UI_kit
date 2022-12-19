@@ -10,8 +10,17 @@
   width: 50%;
   height: 100%;
 
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    border-radius: 30px;
+  }
+
   .modal__flex__center__div {
     display: none;
+
+    @media screen and (max-width: 700px) {
+      display: flex;
+    }
 
     .primary-btn-small {
       background: #191a1d;
@@ -29,6 +38,11 @@
       width: 110px;
       max-width: 150px;
       font-size: 12px;
+
+      @media screen and (max-width: 700px) {
+        margin-right: 10px;
+        width: 90px;
+      }
     }
   }
 
@@ -40,5 +54,9 @@
     background-image: url("@assets/img/auth/login.png");
     border-radius: 0 30px 30px 0;
     background-size: cover;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
   }
 }

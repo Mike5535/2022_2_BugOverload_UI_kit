@@ -60,6 +60,11 @@
     margin-bottom: 33px;
     color: var(--main-color-text);
     font-size: 26px;
+
+    @media screen and (max-width: 800px) {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
   }
 
   &__form {
@@ -79,6 +84,10 @@
     width: 270px;
     height: 55px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__input {
@@ -94,6 +103,10 @@
     font-size: 12px;
     padding-left: 15px;
 
+    @media screen and (max-width: 700px) {
+      height: 25px;
+      font-size: 11px;
+    }
 
     &_red_border {
       border: 2px solid var(--text-danger);
@@ -113,6 +126,10 @@
       width: 44vw;
       min-width: 230px;
       height: 35px;
+
+      @media screen and (max-width: 700px) {
+        height: 27px;
+      }
     }
   }
 
@@ -135,6 +152,10 @@
     height: 30px;
     width: 150px;
     z-index: 1;
+
+    @media screen and (max-width: 800px) {
+      margin-right: 20px;
+    }
   }
 
   &__flex__center__div {
@@ -150,4 +171,8 @@
   max-width: 910px;
   width: 95vw;
   min-width: 310px;
+
+  @media screen and (max-width: 700px) {
+    width: 65vw;
+  }
 }

@@ -153,17 +153,6 @@ button {
   html {
     --font-size-normal: 13px;
   }
-
-  .modal {
-    &__header {
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
-
-    &__login__switch__btn {
-      margin-right: 20px;
-    }
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -185,15 +174,6 @@ button {
   }
 
   .modal {
-    &__input {
-      height: 25px;
-      font-size: 11px;
-
-      &__button-auth {
-        height: 27px;
-      }
-    }
-
     &__wrapper__input {
       margin-bottom: 10px;
     }
