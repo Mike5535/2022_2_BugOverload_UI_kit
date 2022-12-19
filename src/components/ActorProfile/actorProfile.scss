@@ -9,11 +9,22 @@
         display: flex;
         margin-top: 65px;
         max-height: 400px;
+
+        @media screen and (max-width: 1150px) {
+            max-height: none;
+            flex-wrap: wrap;
+        }
     }
 
     &__primary {
         display: flex;
         max-height: 400px;
+
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+            max-height: none;
+            justify-content: center;
+        }
     }
 
     &__gallery {
@@ -22,6 +33,10 @@
         gap: 5px;
         overflow: hidden;
         max-width: 45vw;
+
+        @media screen and (max-width: 1150px) {
+            max-width: 90vw;
+        }
 
         &__title {
             display: none;
@@ -32,6 +47,10 @@
             width: 100vw;
             justify-content: flex-start;
             margin-bottom: var(--standart-margin);
+
+            @media screen and (max-width: 1150px) {
+                display: flex;
+            }
         }
 
         @media screen and (max-width: 800px) {

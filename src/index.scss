@@ -102,33 +102,12 @@ button {
   padding: 0;
   text-decoration: none;
   background: none;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  .profile__menu__column {
-    display: none;
-  }
+  cursor: pointer; 
 }
 
 @media screen and (max-width: 1150px) {
   .js-header__navlink-my-films {
     display: none;
-  }
-
-  .actor-profile {
-    &__content {
-      max-height: none;
-      flex-wrap: wrap;
-    }
-
-    &__gallery {
-      max-width: 90vw;
-
-      &__title {
-        display: flex;
-      }
-    }
   }
 }
 
@@ -161,45 +140,10 @@ button {
     --font-size-small: 11px;
   }
 
-  .actor-profile__primary {
-    flex-wrap: wrap;
-    max-height: none;
-    justify-content: center;
-  }
-
   .profile {
     &__content-container {
       flex-wrap: wrap;
     }
-  }
-
-  .modal {
-    &__wrapper__input {
-      margin-bottom: 10px;
-    }
-
-    &__login,
-    &__signup {
-      width: 100%;
-      border-radius: 30px;
-
-      &__img {
-        display: none;
-      }
-
-      .modal__flex__center__div {
-        display: flex;
-      }
-    }
-  }
-
-  .modal__login .modal__flex__center__div .modal__login__switch__btn {
-    margin-right: 10px;
-    width: 90px;
-  }
-
-  .auth__wrapper {
-    width: 65vw;
   }
 
   .preview-film__blackout-bottom {
