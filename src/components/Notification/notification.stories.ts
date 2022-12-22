@@ -15,5 +15,5 @@ Default.args = {
     name: '«V» значит Вендетта',
     rating: 7.8,
     ticket: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley',
-    prod_date: '11.12.2022',
+    description: 'В Кино с 30 января!',
 };
