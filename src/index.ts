@@ -28,6 +28,7 @@ export { LoginUI } from "@components/Login/login";
 export { SignupUI } from "@components/Signup/signup";
 export { ActorProfileUI } from "@components/ActorProfile/actorProfile";
 export { GenreUI } from "@components/Genre/genre";
-export { PersonMedUI } from "@components/PersonMed/personMed"; 
+export { PersonMedUI } from "@components/PersonMed/personMed";
 export { ProfileChangeUI } from "@components/ProfileChange/profileChange";
 export { ProfileMenuUI } from "@components/ProfileMenu/profileMenu";
+export { NotificationUI } from "@components/Notification/notification";
