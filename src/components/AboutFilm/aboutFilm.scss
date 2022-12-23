@@ -1,3 +1,15 @@
+.trailer {
+  &__iframe{
+    width: 720px;
+    height: 440px;
+
+    @media screen and (max-width: 800px) {
+      width: 500px;
+      height: 340px;
+    }
+  }
+}
+
 .about-film {
   display: flex;
   position: relative;
