@@ -155,10 +155,6 @@ button {
       flex-wrap: wrap;
     }
   }
-
-  .preview-film__blackout-bottom {
-    height: 120px;
-  }
 }
 
 @media screen and (max-width: 620px) {
@@ -168,33 +164,7 @@ button {
     --margin-left-login-btn: 155px;
     --font-size-big: 36px;
     --font-size-small: 9px;
-    --header-height: 75px;
-  }
-
-  .input-review__user-container {
-    display: none;
-    margin-top: 15px;
-  }
-
-  .input-review__head {
-    margin-bottom: 15px;
-    font-size: 25px;
-  }
-
-  .search-page__title {
-    margin-top: 0;
-  }
-
-  .header__form__icon-search {
-    top: 5px;
-    width: 25px;
-
-    &_input-full {
-      top: 10px;
-      width: 16px;
-      margin-left: 0;
-      left: 0;
-    }
+    --header-height: 75px; 
   }
 
   .primary-btn-big {
@@ -248,52 +218,6 @@ button {
     &__userbar-substrate {
       margin-right: 25px;
     }
-  }
-
-  .page__collection__body .film {
-    margin-right: 0;
-  }
-
-  .input-review {
-    height: 100%;
-
-    &__container {
-      height: 100%;
-      padding: 25px 30px 35px;
-    }
-
-    &__form {
-      height: 50%;
-    }
-
-    &__select-head-text {
-      font-size: 15px;
-    }
-
-    &__input-title {
-      font-size: 12px;
-      height: 41px;
-    }
-
-    &__input-text {
-      font-size: 12px;
-    }
-
-    &__select {
-      height: 41px;
-    }
-  }
-}
-
-@media screen and (max-width: 494px) {
-  .page__collection__body {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .modal__input__error {
-    width: 67%;
   }
 }
 

@@ -19,6 +19,16 @@ $input-height: 46px;
 
 
 .input-review {
+  @media screen and (max-width: 620px) {
+    height: 100%;
+  }
+
+  &__form {
+    @media screen and (max-width: 620px) {
+      height: 50%;
+    }
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -31,18 +41,33 @@ $input-height: 46px;
     max-width: 700px;
     width: 95vw;
     height: auto;
+
+    @media screen and (max-width: 620px) {
+      height: 100%;
+      padding: 25px 30px 35px;
+    }
   }
 
   &__head {
     color: var(--main-color-text);
     font-size: 36px;
     width: 400px;
+
+    @media screen and (max-width: 620px) {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
   }
 
   &__user-container {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 620px) {
+      display: none;
+      margin-top: 15px;
+    }
   }
 
   &__user-avatar {
@@ -77,6 +102,11 @@ $input-height: 46px;
     padding: 0 24px;
     box-sizing: border-box;
     font-size: 15px;
+
+    @media screen and (max-width: 620px) {
+      font-size: 12px;
+      height: 41px;
+    }
   }
 
   &__input-text {
@@ -89,6 +119,10 @@ $input-height: 46px;
     box-sizing: border-box;
     font-size: 15px;
     margin-bottom: 35px;
+
+    @media screen and (max-width: 620px) {
+      font-size: 12px;
+    }
   }
 
   &__select__wrapper {
@@ -103,11 +137,19 @@ $input-height: 46px;
     height: $input-height;
     background-color: var(--backgr-select);
     border-radius: 4px;
+
+    @media screen and (max-width: 620px) {
+      height: 41px;
+    }
   }
 
   &__select-head-text {
     font-size: 20px;
     color: var(--main-modal-color);
+
+    @media screen and (max-width: 620px) {
+      font-size: 15px;
+    }
   }
 
   &__select-head {

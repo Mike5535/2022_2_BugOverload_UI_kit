@@ -119,6 +119,10 @@
       color: var(--text-danger);
       font-size: var(--font-size-small);
       max-width: 300px;
+
+      @media screen and (max-width: 430px) {
+        width: 67%;
+      }
     }
 
     &__button-auth {
