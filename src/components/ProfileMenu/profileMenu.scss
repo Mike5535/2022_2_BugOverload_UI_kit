@@ -1,7 +1,6 @@
 @mixin column__flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: flex-start;
     align-items: flex-start;
 }
@@ -13,11 +12,12 @@
 }
 
 .profile__menu {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 65px);
     background: linear-gradient(to top, var(--color-menu-max), var(--color-menu-min));
 
     &__flex {
         @include column__flex;
+        justify-content: flex-start;
         height: 425px;
         width: 307px;
         color:  var(--main-color-text);
@@ -25,6 +25,7 @@
 
     &__column {
         @include column__flex;
+        justify-content: center;
         height: 100%;
 
         @media screen and (max-width: 1200px) {
