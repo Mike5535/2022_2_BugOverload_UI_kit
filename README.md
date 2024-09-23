@@ -2,7 +2,7 @@
 
 ## Деплой
 
-https://uikit.movie-gate.online
+https://uikit.movie-gate.ru
 
 ## npm
 
